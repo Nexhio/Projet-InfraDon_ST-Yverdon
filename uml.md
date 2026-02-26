@@ -2,7 +2,7 @@
 classDiagram
     
     class Mobilier {
-        id_mobilier
+        PK id
         type_mobilier
         materiau
         date_installation
@@ -12,6 +12,7 @@ classDiagram
     }
 
     class Signalement {
+        PK id
         date_signalement
         signale_par
         description
@@ -20,6 +21,7 @@ classDiagram
     }
 
     class Intervention {
+        PK id
         date_intervention
         type_intervention
         technicien
@@ -29,6 +31,7 @@ classDiagram
     }
 
     class Fournisseur {
+        PK id
         entreprise
         contact
         telephone
