@@ -92,8 +92,4 @@ ENTREPRISE {
     string email
 }
 
-    MOBILIER }o--|| FOURNISSEUR : "fourni/maintenu par"
-    MOBILIER ||--o{ SIGNALEMENT : "fait l'objet de"
-    MOBILIER ||--o{ INTERVENTION : "subit"
-    INTERVENTION }o--o| SIGNALEMENT : "résout"
-    INTERVENTION }o--|| FOURNISSEUR : "réalisée par"
+    MOBILIER ||--|| TYPE_MOBILIER : est
