@@ -4,13 +4,22 @@ erDiagram
     MOBILIER {
         int id PK
         string type_mobilier
-        string materiau
+        string materiaux
         date date_installation
         string etat_actuel
         string remarques
         string localisation
         int id_fournisseur FK
     }
+
+    TYPE_MOBILIER {
+}
+
+    MATERIAUX {
+}
+
+ETAT_ACTUEL {
+}
 
     SIGNALEMENT {
         int id PK
