@@ -13,12 +13,18 @@ erDiagram
     }
 
     TYPE_MOBILIER {
+        int id PK
+        string type
 }
 
     MATERIAUX {
+        int id PK
+        string materiaux
 }
 
 ETAT_ACTUEL {
+        int id PK
+        string etat
 }
 
     SIGNALEMENT {
