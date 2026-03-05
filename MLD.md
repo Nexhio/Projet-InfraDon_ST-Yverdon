@@ -91,5 +91,3 @@ ENTREPRISE {
     string telephone
     string email
 }
-
-    MOBILIER ||--|| TYPE_MOBILIER : est
