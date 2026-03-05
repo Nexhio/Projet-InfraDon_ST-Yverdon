@@ -30,10 +30,26 @@ ETAT_ACTUEL {
 SIGNALEMENT {
     int id PK
     int id_mobilier FK
+    int id_signale_par FK
+    int id_urgence FK
+    int id_statut FK
     date date_signalement
-    string signale_par
     string description
-    string urgence
+}
+
+SIGNALE_PAR {
+    int id PK
+    string nom
+    string prenom
+}
+
+URGENCE {
+    int id PK
+    boolean urgence
+}
+
+STATUT {
+    int id PK
     string statut
 }
 
@@ -42,12 +58,23 @@ INTERVENTION {
     int id_mobilier FK
     int id_fournisseur FK
     int id_signalement FK
+    int id_type_intervention FK
+    int id_technicien FK
     date date_intervention
-    string type_intervention
-    string technicien
     string duree
     decimal cout_materiel
     string remarques
+}
+
+TYPE_INTERVENTION {
+    int id PK
+    string type
+}
+
+TECHNICIEN {
+    int id PK
+    string nom
+    string prenom
 }
 
 FOURNISSEUR {
