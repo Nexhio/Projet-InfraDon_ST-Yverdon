@@ -79,12 +79,17 @@ TECHNICIEN {
 
 FOURNISSEUR {
     int id PK
+    int id_entreprise FK
+    int id_materiaux FK
+    string remarques
+}
+
+ENTREPRISE {
+    int id PK
     string entreprise
     string contact
     string telephone
     string email
-    string type_materiel
-    string remarques
 }
 
     MOBILIER }o--|| FOURNISSEUR : "fourni/maintenu par"
