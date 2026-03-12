@@ -5,7 +5,7 @@ class MOBILIER {
     int id PK
     int id_type_mobilier FK
     int id_materiaux FK
-    int id_etat_actuel FK
+    int id_etat FK
     int id_fournisseur FK
     date date_installation
     string remarques
@@ -14,7 +14,7 @@ class MOBILIER {
 
 MOBILIER -- TYPE_MOBILIER
 MOBILIER -- MATERIAUX
-MOBILIER -- ETAT_ACTUEL
+MOBILIER -- ETAT
 MOBILIER -- FOURNISSEUR
 
 class TYPE_MOBILIER {
@@ -27,7 +27,7 @@ class MATERIAUX {
      string materiaux
 }
 
-class ETAT_ACTUEL {
+class ETAT {
     int id PK
     string etat
 }
@@ -96,7 +96,6 @@ class TECHNICIEN {
 class FOURNISSEUR {
     int id PK
     int id_entreprise FK
-    int id_materiaux FK
     string remarques
 }
 
