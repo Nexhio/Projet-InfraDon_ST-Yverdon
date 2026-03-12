@@ -1,0 +1,122 @@
+﻿id;type;materiau;lieu;latitude;longitude;date_installation;etat;remarques
+B-001;banc;bois;Avenue de la Gare;;;08.04.2019;à remplacer;
+1002;Banc;bois;Rue du Lac;46,77932212;6,637371232;01.10.2023;bon;
+B_3;banc;bois;Rue du Casino;46,77885475;6,639355991;2020;bon;sous un arbre
+B_4;Banc;bois;HEIG-VD;46,78;6,66;février 2021;usé;
+B-005;banc;bois;Place de la Gare;46,78106843;6,64157228;09.07.2016;bon;
+1006;banc public;bois;Place de la Gare;46,78208324;6,641524;08.12.2023;bon;
+B_7;Banc;bois;Place Pestalozzi;46,77850749;6,640148663;2020;bon;
+B-008;Banc;bois;Rue du Milieu;46,77893365;6,639979194;24.04.2017;usé;
+B-009;banc public;bois;Y-Parc;46,76481563;6,628153421;05.02.2015;à remplacer;
+B-010;banc;bois;HEIG-VD;46,78115305;6,658205193;18.11.2016;usé;sous un arbre
+1011;banc;bois;Chemin de Maillefer;46,78101226;6,655518258;28.02.2023;bon;
+1012;banc;bois;Rue Haldimand;46,78;6,65;04.01.2022;usé;
+B-013;banc;bois;Chemin de Maillefer;46,78117055;6,656742981;16.11.2017;à remplacer;
+B_14;banc public;bois;Rue du Milieu;;;2021-11-21;usé;
+B-015;Banc;bois;Chemin de Maillefer;46,78157542;6,655313372;23.02.2015;usé;offert par le Lions Club
+B-016;Banc;Métal;Rue de la Maison Rouge;46,78;6,64;19.12.2017;usé;
+1017;banc;Métal;Route de Lausanne;46,76574288;6,641578676;2022;bon;
+B-018;banc public;métal;Rue du Casino;46,78006955;6,638156654;15.05.2017;bon;
+B-019;Banc;metal;Avenue de la Gare;46,78;6,64;14.03.2018;usé;
+B_20;Banc;Métal;Centre sportif;;;décembre 2021;usé;
+1021;banc;Métal;Avenue de la Gare;46,78012818;6,64129732;2022-09-28;bon;
+B-022;banc public;métal;Y-Parc;46,76510436;6,627706192;20.10.2018;bon;
+B-023;banc public;Métal;Quai de Nogent;46,78490298;6,635316069;05.07.2019;bon;
+1024;banc;metal;Avenue de la Gare;46,78;6,64;avril 2023;bon;
+1025;banc;métal;HEIG-VD;46,78208787;6,658448717;mai 2023;bon;offert par le Lions Club
+1026;banc public;métal;Rue du Milieu;46,78;6,64;2023-08-09;bon;
+1027;Banc;métal;Route de Lausanne;46,77;6,64;04.01.2023;bon;face au lac
+B-028;Banc;metal;Quai de Nogent;46,79;6,64;04.11.2018;usé;
+B-029;Banc;metal;Rue du Casino;46,7799598;6,638172953;24.03.2015;usé;
+1030;banc;métal;Rue du Lac;46,78;6,64;juin 2022;bon;
+1031;Banc;métal;Avenue des Sports;46,77877368;6,651261212;juin 2023;bon;
+B_32;banc public;metal;Y-Parc;46,76529897;6,628704421;2021;bon;plaque commémorative
+B_33;Banc;métal;Rue de la Plaine;46,77985343;6,642843841;2020;bon;
+B-034;banc;métal;Rue des Pêcheurs;46,76845721;6,635170659;18.07.2019;bon;
+1035;banc;Métal;Rue de la Maison Rouge;46,77841271;6,640736301;décembre 2022;bon;
+B-036;Banc;métal;Rue du Lac;46,77831653;6,637363106;02.01.2017;usé;
+B_37;banc;Métal;Route de Lausanne;46,76555015;6,641486576;2021-04-05;bon;
+B-038;banc public;Métal;Passage de l'Hôtel de Ville;46,78085084;6,640507645;22.08.2017;bon;
+1039;Banc;métal;Rue du Casino;46,77908279;6,638703796;mai 2022;bon;
+B-040;Banc;metal;Parc des Rives;46,78;6,64;08.03.2017;bon;sous un arbre
+L-001;Lampadaire;sodium;Avenue de la Gare;46,78047778;6,641623979;2015;usé;
+L-002;Lampadaire;sodium;Place de la Gare;46,78112217;6,641570198;2016-08-08;à remplacer;
+L-003;lampadaire;sodium;Place de la Gare;46,7815608;6,640634316;2015;à remplacer;
+L-004;Lampadaire;sodium;Avenue de la Gare;46,78054;6,642407424;2013;usé;
+L-005;lampadaire sodium;sodium;Avenue de la Gare;46,78055994;6,642040231;01.08.2014;usé;
+L-006;lampadaire;sodium;Place de la Gare;46,7812577;6,640683023;2012;usé;
+L-007;lampadaire sodium;sodium;Rue de la Plaine;46,77946203;6,642697662;mars 2014;usé;
+L-008;lampadaire;sodium;Passage de l'Hôtel de Ville;46,78102891;6,640088559;juillet 2016;usé;
+L-009;lampadaire;sodium;Avenue de la Gare;46,78105843;6,641110331;26.10.2016;bon;
+L-010;Lampadaire;sodium;Passage de l'Hôtel de Ville;46,78039678;6,640874072;février 2015;à remplacer;
+L-011;lampadaire sodium;sodium;Passage de l'Hôtel de Ville;46,78009279;6,641195395;2016;bon;
+L-012;lampadaire sodium;sodium;Passage de l'Hôtel de Ville;46,78049089;6,640220023;octobre 2013;à remplacer;
+L-013;lampadaire LED;LED;Plage d'Yverdon;46,78470569;6,63408617;2018-10-23;bon;
+L-014;lampadaire LED;LED;Avenue des Bains;46,78308929;6,635762336;janvier 2019;bon;
+L_15;lampadaire LED;LED;Plage d'Yverdon;46,78476886;6,634854055;2020-06-23;bon;
+L-016;lampadaire sodium;sodium;Rue du Casino;46,78003221;6,638473994;mai 2017;bon;
+L_17;Lampadaire LED;LED;Rue du Lac;46,77840205;6,638089538;02.05.2020;bon;
+L-018;Lampadaire LED;LED;Avenue des Bains;46,78407876;6,634882539;11.08.2019;bon;double tête
+L-019;lampadaire;sodium;Rue du Lac;46,77942311;6,637670108;2017-10-10;usé;
+L-020;lampadaire led;LED;Avenue des Bains;46,78369364;6,635675409;2019-05-28;usé;
+L_21;Lampadaire LED;LED;Plage d'Yverdon;46,7845201;6,633704281;2020;bon;
+L-022;lampadaire LED;LED;Chemin de Maillefer;46,78057348;6,655623287;2019-05-23;usé;
+L-023;lampadaire LED;LED;Chemin de Maillefer;46,78046548;6,655692179;novembre 2019;bon;
+L-024;lampadaire led;LED;Avenue des Sports;46,77800076;6,651990072;2019;usé;éclairage passage piéton
+L_25;Lampadaire LED;LED;Plage d'Yverdon;46,78547565;6,634131218;2021;bon;mât 6m
+1066;lampadaire LED;LED;Plage d'Yverdon;46,78515202;6,634353357;19.03.2022;usé;
+L_27;lampadaire LED;LED;Route de Lausanne;46,76608015;6,640927721;décembre 2021;usé;
+1068;lampadaire led;LED;Y-Parc;46,76450013;6,627778847;2022;usé;
+L_29;lampadaire LED;LED;Centre sportif;46,76747554;6,637246191;2020-09-05;usé;
+L_30;lampadaire led;LED;Plage d'Yverdon;46,78598761;6,635160688;01.09.2020;usé;
+L_31;lampadaire led;LED;Avenue des Bains;46,783472;6,635455552;2020-12-10;bon;
+L_32;lampadaire LED;LED;Chemin de Maillefer;46,78101238;6,656512879;février 2020;bon;
+1073;lampadaire led;LED;Avenue des Bains;46,78358307;6,635569488;mars 2023;usé;
+L_34;lampadaire LED;LED;Route de Lausanne;46,76595676;6,641661488;2020-04-28;bon;
+L-035;lampadaire LED;LED;Chemin de Maillefer;46,78090449;6,656041522;2019-09-19;bon;
+P-001;corbeille;metal;Rue des Pêcheurs;46,76819722;6,634835973;26.08.2017;bon;
+P_2;poubelle tri;métal;Avenue des Sports;46,77818794;6,651575632;novembre 2021;bon;
+P-003;poubelle;metal;Passage de l'Hôtel de Ville;46,77996618;6,640179146;23.11.2017;bon;
+P_4;poubelle tri;métal;Parc des Rives;46,78359072;6,637359283;2020-06-12;bon;
+1080;Poubelle;metal;Place Pestalozzi;46,77906053;6,639228988;2022;usé;
+P_6;poubelle tri;metal;Avenue des Bains;46,78378418;6,634952761;2020;bon;
+1082;poubelle tri;metal;Rue Haldimand;46,77901875;6,647815509;2022;bon;
+P_8;corbeille;métal;Rue du Casino;46,78026471;6,639053168;octobre 2021;bon;
+1084;Poubelle;metal;HEIG-VD;46,78125041;6,658504211;mai 2023;usé;
+P-010;poubelle tri;métal;Place Pestalozzi;46,77852732;6,640171776;26.05.2016;bon;
+P-011;corbeille;metal;Avenue des Bains;46,78402876;6,635111152;2018;bon;
+1087;Poubelle;metal;Parc des Rives;46,78474763;6,63798734;février 2023;bon;
+P_13;poubelle tri;metal;Y-Parc;46,76527653;6,628275745;2020;usé;
+P-014;corbeille;métal;Parc des Rives;46,78423624;6,637716646;2019;usé;
+P-015;poubelle;metal;Avenue des Bains;46,78429348;6,634885793;2017-03-02;usé;
+1091;poubelle tri;métal;Rue du Casino;46,78011666;6,639047875;2023;usé;
+P-017;Poubelle;metal;Centre sportif;46,76741151;6,63757778;décembre 2016;bon;
+P-018;Poubelle;métal;Plage d'Yverdon;46,78591842;6,635018706;09.07.2016;usé;
+P-019;corbeille;métal;Rue de la Maison Rouge;46,77898211;6,641459165;2016-01-26;bon;
+P-020;Poubelle;métal;Chemin de Maillefer;46,78064364;6,656774445;2019-04-11;usé;
+P-021;poubelle;métal;Quai de Nogent;46,78372378;6,636463975;2017-11-28;usé;
+P-022;Poubelle;metal;Parc des Rives;46,78404174;6,637893064;2018;bon;
+1098;poubelle;metal;Parc des Rives;46,78393287;6,638242442;08.09.2023;bon;
+P-024;poubelle tri;métal;Route de Lausanne;46,76663883;6,640715379;2017-08-23;bon;
+P_25;corbeille;metal;Rue du Milieu;46,77880888;6,640088319;20.07.2021;usé;
+F-001;Fontaine;Pierre;Place de la Gare;46,78182387;6,641137968;08.08.2016;bon;
+F-002;Fontaine;pierre;Avenue des Bains;46,78379891;6,635458829;09.11.2015;bon;
+F-003;Fontaine;pierre;Rue du Casino;46,77959019;6,638938344;2011;bon;
+F-004;fontaine publique;Pierre;Parc des Rives;46,78458895;6,637853697;28.06.2016;usé;
+F-005;fontaine;pierre;Plage d'Yverdon;46,78545078;6,634058792;2011;bon;eau potable
+F-006;fontaine;Pierre;Rue de la Plaine;46,78055225;6,643759275;2011;bon;
+F-007;Fontaine;béton;Avenue de la Gare;46,78121986;6,64247446;2014;usé;
+F-008;fontaine publique;béton;Rue du Lac;46,7797549;6,636846812;05.02.2016;bon;
+F-009;Fontaine;Pierre;Avenue des Bains;46,78385455;6,635942937;06.06.2017;bon;
+F-010;fontaine publique;pierre;Place Pestalozzi;46,77867835;6,639435365;2012;bon;historique
+1111;borne EV;;Route de Lausanne;46,76538211;6,640887862;2022-05-07;bon;50kW rapide
+1112;Borne recharge;;Rue de la Maison Rouge;46,77747267;6,640832421;2022-09-22;bon;
+EV_3;borne recharge EV;;Avenue de la Gare;46,78122266;6,641463115;2021-05-07;bon;22kW
+1114;borne recharge EV;;Passage de l'Hôtel de Ville;46,78030833;6,640825874;2023-07-06;bon;
+EV_5;borne EV;;Rue du Milieu;46,77806768;6,639429986;2021-07-28;bon;22kW
+1116;panneau info;bois;Passage de l'Hôtel de Ville;46,78016322;6,640348052;juillet 2022;bon;
+PA-002;panneau affichage;métal;Rue de la Plaine;46,77989708;6,64284072;28.07.2018;bon;
+PA-003;panneau affichage;métal;Rue de la Plaine;46,78001677;6,642382443;2019-06-25;bon;
+PA-004;Panneau;métal;Place de la Gare;46,7807776;6,640744592;05.02.2019;bon;
+1120;panneau info;bois;Passage de l'Hôtel de Ville;46,78108279;6,640703548;2022-10-15;bon;
+1006;banc public;bois;place de la gare;46,78208324;6,641524;08.12.2023;bon;
