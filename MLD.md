@@ -1,8 +1,8 @@
 ```mermaid
 classDiagram
 
-class PK ID {
-    UNIQUE ; NOT NULL
+class PK_ID {
+    "{UNIQUE ; NOT NULL}"
 }
 
 class MOBILIER {
