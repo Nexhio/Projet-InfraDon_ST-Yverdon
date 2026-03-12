@@ -17,7 +17,25 @@ CREATE TABLE staging.interventions (
     technicien TEXT, duree TEXT, cout_materiel TEXT, remarques TEXT
 );
 
-CREATE TABLE staging.fournisseurs (
+CREATE TABLE staging.fournisseurs_contacts (
     entreprise TEXT, contact TEXT, telephone TEXT,
     email TEXT, type_materiel TEXT, remarques TEXT
 );
+
+
+COPY staging.inventaire_mobilier
+FROM '/data/inventaire_mobilier.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
+
+COPY staging.interventions
+FROM '/data/interventions.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
+
+COPY staging.signalements
+FROM '/data/signalements.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
+
+COPY staging.fournisseurs_contacts
+FROM '/data/fournisseurs_contacts.csv'
+WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
+
