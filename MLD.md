@@ -1,6 +1,9 @@
 ```mermaid
 classDiagram
 
+class PK ID {UNIQUE ; NOT NULL} {
+}
+
 class MOBILIER {
     int id PK
     int id_type_mobilier FK
