@@ -1,9 +1,10 @@
 ```mermaid
 classDiagram
 
-class PK_ID {
-    "{UNIQUE ; NOT NULL}"
-}
+erDiagram
+    TABLE {
+        int id PK "UNIQUE ; NOT NULL"
+    }
 
 class MOBILIER {
     int id PK
