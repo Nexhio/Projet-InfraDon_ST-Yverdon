@@ -1,7 +1,7 @@
 ```mermaid
 classDiagram
 
-TABLE {
+class TABLE {
     int id PK "UNIQUE ; NOT NULL"
 }
 
