@@ -38,4 +38,3 @@ WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
 COPY staging.fournisseurs_contacts
 FROM '/data/fournisseurs_contacts.csv'
 WITH (FORMAT csv, HEADER true, DELIMITER ';', ENCODING 'UTF8');
-

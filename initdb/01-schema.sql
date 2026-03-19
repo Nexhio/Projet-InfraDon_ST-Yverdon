@@ -2,10 +2,6 @@
 
 -- ////////////// Tables de référence (sans FK) en premier //////////////////////////////
 
-CREATE TABLE type_mobilier (
-    id SERIAL PRIMARY KEY,
-    type VARCHAR(100) NOT NULL
-);
 
 CREATE TABLE materiaux (
     id SERIAL PRIMARY KEY,
@@ -107,4 +103,3 @@ CREATE TABLE intervention (
     FOREIGN KEY (id_type_intervention) REFERENCES type_intervention(id),
     FOREIGN KEY (id_technicien) REFERENCES technicien(id)
 );
-
