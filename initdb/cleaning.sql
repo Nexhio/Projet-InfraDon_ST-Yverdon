@@ -1,4 +1,6 @@
-SELECT (
+
+
+SELECT DISTINCT (
     CASE (technicien)
     WHEN 'JM'           THEN 'Jean-Marc Bonvin'
     WHEN 'Jean-Marc'    THEN 'Jean-Marc Bonvin'
@@ -13,15 +15,15 @@ AS technicien_trié, technicien
 FROM interventions;
 
 
-SELECT (
-    CASE (materiau)
-    WHEN 'sodium' THEN 'Lampadaire Sodium'
-    WHEN 'LED'    THEN 'Lampadaire LED'
+
+
+SELECT DISTINCT (
+    CASE (statut)
+    WHEN 'fait'          THEN 'Fait'
+    WHEN 'en attente'    THEN 'En attente'
+    WHEN 'en cours'      THEN 'En cours'
+    ELSE 'En attente'
     END
 )
-AS materiau_trié
-FROM inventaire_mobilier
-WHERE materiau LIKE 'LED' OR materiau LIKE 'sodium' ;
-
-SELECT DISTINCT etat
-FROM inventaire_mobilier;
+AS urgence
+FROM staging.signalements;
