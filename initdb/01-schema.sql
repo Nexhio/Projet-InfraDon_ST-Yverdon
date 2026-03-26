@@ -59,14 +59,12 @@ CREATE TABLE fournisseur (
 
 CREATE TABLE mobilier (
     id INT PRIMARY KEY,
-    id_type_mobilier INT NOT NULL,
     id_materiaux INT,
     id_etat INT NOT NULL,
     id_fournisseur INT,
     date_installation DATE,
     remarques TEXT,
     localisation VARCHAR(200),
-    FOREIGN KEY (id_type_mobilier) REFERENCES type_mobilier(id),
     FOREIGN KEY (id_materiaux) REFERENCES materiaux(id),
     FOREIGN KEY (id_etat) REFERENCES etat(id),
     FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(id)

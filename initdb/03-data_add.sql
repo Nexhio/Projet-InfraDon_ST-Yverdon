@@ -6,7 +6,7 @@ SELECT DISTINCT (
     END
 )
 AS materiaux
-FROM inventaire_mobilier
+FROM staging.inventaire_mobilier
 WHERE materiau LIKE 'LED' OR materiau LIKE 'sodium';
 
 
