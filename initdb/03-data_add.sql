@@ -1,4 +1,4 @@
--- Active: 1772719530316@@127.0.0.1@5432@infradon
+-- Active: 1776339493013@@127.0.0.1@5432@infradon
 INSERT INTO public.materiaux (materiaux)
 SELECT DISTINCT (
     CASE (materiau)
@@ -77,3 +77,47 @@ FROM (
     END
 FROM staging.interventions
 );
+
+INSERT INTO public.signale_par (nom)
+SELECT DISTINCT (
+    CASE (signale_par)
+    WHEN 'email citoyen'        THEN 'Habitant'
+    WHEN 'concierge école'      THEN 'Concierge École'
+    WHEN 'habitant du quartier' THEN 'Habitant'
+    WHEN 'patrouille JM'        THEN 'Jean-Marc Bonvin'
+    WHEN 'un habitant'          THEN 'Habitant'
+    WHEN 'un passant'           THEN 'Habitant'
+    ELSE signale_par
+    END
+)
+FROM staging.signalements;
+
+INSERT INTO public.entreprise (entreprise, contact, telephone, email)
+SELECT DISTINCT entreprise,
+    CASE (contact)
+        WHEN 'voir site web' THEN NULL
+        ELSE (contact)
+    END,
+
+    CASE
+        WHEN telephone LIKE '+41%' 
+            THEN
+            REGEXP_REPLACE(
+                '0'|| TRIM(LEADING '+41' FROM TRIM(telephone)),
+                '(\d{3})(\d{3})(\d{2})(\d{2})',
+                '\1 \2 \3 \4'
+            )
+            ELSE
+                REGEXP_REPLACE(
+                    REGEXP_REPLACE(TRIM(telephone), '\s', '', 'g'),
+                        '(\d{3})(\d{3})(\d{2})(\d{2})',
+                        '\1 \2 \3 \4'
+                        )
+        WHEN telephone LIKE '0 21%'     THEN '021 456 78 90'
+        END,
+        
+    CASE (email)
+        WHEN 'voir site web' THEN NULL
+        ELSE (email)
+    END
+FROM staging.fournisseurs_contacts;
