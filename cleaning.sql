@@ -1,18 +1,29 @@
+-- Active: 1776339493013@@127.0.0.1@5432@infradon
 
 
-SELECT DISTINCT 
-    SPLIT_PART(technicien, ' ', 2) AS nom,
-    SPLIT_PART(technicien, ' ', 1) AS prenom
-FROM (
-    SELECT  
-    CASE (technicien)
-    WHEN 'JM'           THEN 'Jean-Marc Bonvin'
-    WHEN 'Jean-Marc'    THEN 'Jean-Marc Bonvin'
-    WHEN 'P. Alves'     THEN 'Pedro Alves'
-    WHEN 'Pedro'        THEN 'Pedro Alves'
-    WHEN 'Alves Pedro'  THEN 'Pedro Alves'
-    WHEN 'Koffi Marc'   THEN 'Marc Koffi'
-    WHEN 'stagiaire'    THEN 'Stagiaire'
-    ELSE technicien
-END
-FROM staging.interventions);
+SELECT DISTINCT entreprise,
+    CASE (contact)
+        WHEN 'voir site web' THEN NULL
+        ELSE (contact)
+    END,
+
+    CASE
+        WHEN telephone LIKE '+41%' 
+            THEN
+            REGEXP_REPLACE(
+                '0'|| TRIM(LEADING '+41' FROM TRIM(telephone)),
+                '(\d{3})(\d{3})(\d{2})(\d{2})',
+                '\1 \2 \3 \4'
+            )
+            ELSE
+                REGEXP_REPLACE(
+                    REGEXP_REPLACE(TRIM(telephone), '\s', '', 'g'),
+                        '(\d{3})(\d{3})(\d{2})(\d{2})',
+                        '\1 \2 \3 \4'
+                        )
+        END,
+    CASE (email)
+        WHEN 'voir site web' THEN NULL
+        ELSE (email)
+    END
+FROM staging.fournisseurs_contacts;
