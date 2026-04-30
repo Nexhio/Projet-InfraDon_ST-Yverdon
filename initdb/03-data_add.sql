@@ -1,4 +1,4 @@
--- Active: 1772719530316@@127.0.0.1@5432@infradon
+-- Active: 1776341660143@@127.0.0.1@5432@infradon
 INSERT INTO public.materiaux (materiaux)
 SELECT DISTINCT (
     CASE (materiau)
@@ -77,3 +77,10 @@ FROM (
     END
 FROM staging.interventions
 );
+
+INSERT INTO public.fournisseur (id_entreprise, remarques)
+SELECT DISTINCT
+    e.id, 
+    s.remarques
+FROM staging.fournisseurs_contacts s
+JOIN public.entreprise e ON e.entreprise = s.entreprise;
