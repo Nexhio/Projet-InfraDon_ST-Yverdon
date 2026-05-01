@@ -113,7 +113,6 @@ SELECT DISTINCT entreprise,
                         '(\d{3})(\d{3})(\d{2})(\d{2})',
                         '\1 \2 \3 \4'
                         )
-        WHEN telephone LIKE '0 21%'     THEN '021 456 78 90'
         END,
         
     CASE (email)
@@ -121,3 +120,21 @@ SELECT DISTINCT entreprise,
         ELSE (email)
     END
 FROM staging.fournisseurs_contacts;
+
+
+
+--/////////////////////TABLE FK///////////////////////
+
+
+INSERT INTO public.fournisseur (id_entreprise, remarques)
+SELECT DISTINCT
+    public.entreprise.id,
+    CASE TRIM(staging.fournisseurs_contacts.remarques)
+        WHEN '' THEN NULL
+        ELSE TRIM(staging.fournisseurs_contacts.remarques)
+    END AS remarques
+FROM staging.fournisseurs_contacts
+JOIN public.entreprise 
+    ON TRIM(public.entreprise.entreprise) = TRIM(staging.fournisseurs_contacts.entreprise);
+
+
