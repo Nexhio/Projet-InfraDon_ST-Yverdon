@@ -33,7 +33,7 @@ Voici les transformations appliquées lors du passage `staging → tables finale
 - Les variantes de noms de techniciens (`"JM"`, `"Jean-Marc"`, `"Jean-Marc Bonvin"`) sont résolues via une table de correspondance → `technicien_id`
 
 ## Idempotence
-- ON CONFLICT (id) DO NOTHING sur les INSERT INTO ... SELECT, ce qui permet de relancer le pipeline sans créer de doublons
+- `ON CONFLICT (id) DO NOTHING` sur les `INSERT INTO ... SELECT`, ce qui permet de relancer le pipeline sans créer de doublons
 
 # En résumé
-La première étape **Load** ne fait aucune transformation, tout arrive en format `TEXT`, et à l'étape suivante **Transform** le nettoyage SQL se fait avant que les données soient intégrées aux tables de production, avec leurs types, leur **PK**, les **FK** et les contraites `CHECK?
+La première étape **Load** ne fait aucune transformation, tout arrive en format `TEXT`, et à l'étape suivante **Transform** le nettoyage SQL se fait avant que les données soient intégrées aux tables de production, avec leurs types, leur **PK**, les **FK** et les contraites `CHECK`
