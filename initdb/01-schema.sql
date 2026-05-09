@@ -1,4 +1,5 @@
 -- Active: 1776339493013@@127.0.0.1@5432@infradon
+-- Active: 1776341660143@@127.0.0.1@5432@infradon
 
 
 -- ////////////// Tables de référence (sans FK) en premier //////////////////////////////
@@ -37,7 +38,8 @@ CREATE TABLE technicien (
 
 CREATE TABLE signale_par (
     id SERIAL PRIMARY KEY,
-    nom VARCHAR(100)
+    nom VARCHAR(100),
+    prenom VARCHAR(100)
 );
 
 CREATE TABLE entreprise (
@@ -58,16 +60,14 @@ CREATE TABLE fournisseur (
 );
 
 CREATE TABLE mobilier (
-    id INT PRIMARY KEY,
+    id SERIAL PRIMARY KEY,
     id_materiaux INT,
     id_etat INT NOT NULL,
-    id_fournisseur INT,
     date_installation DATE,
     remarques TEXT,
     localisation VARCHAR(200),
     FOREIGN KEY (id_materiaux) REFERENCES materiaux(id),
     FOREIGN KEY (id_etat) REFERENCES etat(id),
-    FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(id)
 );
 
 CREATE TABLE signalement (
