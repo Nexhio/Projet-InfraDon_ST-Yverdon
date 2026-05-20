@@ -1,4 +1,3 @@
--- Active: 1776339493013@@127.0.0.1@5432@infradon
 -- Active: 1776341660143@@127.0.0.1@5432@infradon
 
 
@@ -61,13 +60,18 @@ CREATE TABLE fournisseur (
 
 CREATE TABLE mobilier (
     id SERIAL PRIMARY KEY,
+    code VARCHAR(20),
     id_materiaux INT,
     id_etat INT NOT NULL,
+    id_fournisseur INT,
+    latitude NUMERIC(10,8),
+    longitude NUMERIC(10,8),
     date_installation DATE,
     remarques TEXT,
     localisation VARCHAR(200),
     FOREIGN KEY (id_materiaux) REFERENCES materiaux(id),
     FOREIGN KEY (id_etat) REFERENCES etat(id),
+    FOREIGN KEY (id_fournisseur) REFERENCES fournisseur(id)
 );
 
 CREATE TABLE signalement (
