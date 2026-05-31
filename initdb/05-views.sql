@@ -1,12 +1,9 @@
-
--- 05-views.sql
--- Vues SQL pour le plan de remplacement des lampadaires
--- Brief C — Commune d'Yverdon-les-Bains, budget CHF 50'000.-
+-- Brief C 
 
 
 
 
--- Livrable 1 — Fiche de chaque lampadaire
+-- Livrable 1 Fiche de chaque lampadaire
 
 
 CREATE VIEW v_lampadaires_detail AS
@@ -26,7 +23,7 @@ LEFT JOIN intervention i ON i.id_mobilier = m.id
 GROUP BY m.id, m.code, m.localisation, mat.materiaux, m.date_installation, m.latitude, m.longitude;
 
 
--- Livrable 2 — Classement de priorité
+-- Livrable 2 Classement de priorité
 -- Score = pannes × 3 + âge × 2 + coût cumulé / 100
 
 
@@ -50,7 +47,7 @@ FROM v_lampadaires_detail
 ORDER BY score_priorite DESC;
 
 
--- Livrable 3 — Sélection dans le budget CHF 50'000.-
+-- Livrable 3  Sélection dans le budget CHF 50'000
 -- Coût unitaire estimé = coût moyen d'un "Remplacement complet"
 
 
